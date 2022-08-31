@@ -1,0 +1,12 @@
+* {
+  color: inherit;
+  margin: 0;
+}
+
+h1 {
+  color: salmon;
+}
+h1 a {
+  color: beige;
+  background-color: royalblue;
+}
