@@ -3,12 +3,53 @@
   margin: 0;
 }
 
+// variable
+// Theme Color
+$primary: #3498db;
+$secondary: #bdc3c7;
+$success: #2ecc71;
+$light: #ecf0f1;
+$danger: #e74c3c;
+$warning: #e67e22;
+
+// spacing
+$base-spacing: .75rem;
+
+// borders
+$base-border-thickness: 1px;
+$base-rounded: .5rem;
+
+// font-size
+$base-font-content: 1rem; // for regular font span, p, etc.
+$base-font-heading: 1.5rem; // for heading text h or display text
+
 h1 {
-  color: salmon;
+  color: $primary;
 
   a {
     color: beige;
     background-color: royalblue;
-    display: block;
   }
+}
+
+.btn {
+  color: $light;
+  background-color: $primary;
+  padding: $base-spacing;
+  border: $base-border-thickness solid $primary;
+  border-radius: $base-rounded;
+  margin-bottom: $base-spacing;
+}
+
+.alert {
+  padding: $base-spacing * 2 $base-spacing;
+  display: block;
+  width: 100%;
+  margin-bottom: $base-spacing;
+  font-size: $base-font-content;
+  background-color: $danger;
+  border: $base-border-thickness solid $danger;
+  color: $light;
+  font-weight: 600;
+  letter-spacing: .1rem;
 }
