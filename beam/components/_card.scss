@@ -1,0 +1,29 @@
+%bindCardContent {
+  padding: $base-spacing ($base-spacing + .25);
+  border-radius: inherit;
+}
+
+.card.shadow-sm {
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, .15);
+}
+.card {
+  border: $base-border-thickness solid $light;
+  background-color: $base-content;
+  border-radius: $base-radius;
+  box-shadow: $base-box-shadow;
+
+  .card-header {
+    @extend %bindCardContent;
+    border-bottom: 1px solid $light;
+    background-color: rgba(0, 0, 0, .025);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .card-body {
+    @extend %bindCardContent;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+}

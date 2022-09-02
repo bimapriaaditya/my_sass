@@ -5,13 +5,18 @@ $success: #2ecc71;
 $light: #ecf0f1;
 $danger: #e74c3c;
 $warning: #e67e22;
+$base-theme: #eaeaea;
+$base-content: #ffffff;
 
 // spacing
 $base-spacing: .75rem;
 
 // borders
 $base-border-thickness: 1px;
-$base-rounded: .5rem;
+$base-radius: .5rem;
+
+// box-shadow
+$base-box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, .25) ;
 
 // font-size
 $base-font-content: 1rem; // for regular font span, p, etc.
